@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>InsiderIvy Sign Up</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <style>
+    .navbar,
+    body {
+      font-family: 'Tinos', serif;
+    }
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .custom-btn {
+      background-color: green;
+      color: white;
+      border: none;
+    }
+
+    .custom-btn:hover {
+      background-color: lightgreen;
+      color: black;
+    }
+  </style>
+
+</head>
+
+
+
+
+
+<body class="bg-light">
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
+    <div class="container-fluid px-md-3">
+      <a class="navbar-brand" href="#">InsiderIvy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Account</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="container">
+  <main style="margin-top: 120px;">
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+      <h2>Sign Up Form</h2>
+      <p class="lead">Please enter your information below to sign up for our college advising services.</p>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-md-6">
+        <h4 class="mb-3">Student Details</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="firstName" class="form-label">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="lastName" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="age" class="form-label">Age</label>
+              <input type="number" class="form-control" id="age" placeholder="Your age" required>
+              <div class="invalid-feedback">
+                Please enter your age.
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="grade" class="form-label">Grade Level</label>
+              <select class="form-select" id="grade" required>
+                <option value="">Choose...</option>
+                <option>Pre-High School</option>
+                <option>Freshman</option>
+                <option>Sophomore</option>
+                <option>Junior</option>
+                <option>Senior</option>
+                <option>CC Transfer</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select your grade level.
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="ethnicity" class="form-label">Ethnicity</label>
+              <select class="form-select" id="ethnicity" required>
+                <option value="">Choose...</option>
+                <option>Hispanic or Latino</option>
+                <option>Not Hispanic or Latino</option>
+                <option>American Indian or Alaska Native</option>
+                <option>Asian</option>
+                <option>Black or African American</option>
+                <option>Native Hawaiian or Other Pacific Islander</option>
+                <option>Middle Eastern</option>
+                <option>White</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select your ethnicity.
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="state" class="form-label">State</label>
+              <select class="form-select" id="state" required>
+                <option value="">Choose...</option>
+                <option>Alabama</option>
+                <option>Alaska</option>
+                <option>Arizona</option>
+                <option>Arkansas</option>
+                <option>California</option>
+                <option>Colorado</option>
+                <option>Connecticut</option>
+                <option>Delaware</option>
+                <option>Florida</option>
+                <option>Georgia</option>
+                <option>Hawaii</option>
+                <option>Idaho</option>
+                <option>Illinois</option>
+                <option>Indiana</option>
+                <option>Iowa</option>
+                <option>Kansas</option>
+                <option>Kentucky</option>
+                <option>Louisiana</option>
+                <option>Maine</option>
+                <option>Maryland</option>
+                <option>Massachusetts</option>
+                <option>Michigan</option>
+                <option>Minnesota</option>
+                <option>Mississippi</option>
+                <option>Missouri</option>
+                <option>Montana</option>
+                <option>Nebraska</option>
+                <option>Nevada</option>
+                <option>New Hampshire</option>
+                <option>New Jersey</option>
+                <option>New Mexico</option>
+                <option>New York</option>
+                <option>North Carolina</option>
+                <option>North Dakota</option>
+                <option>Ohio</option>
+                <option>Oklahoma</option>
+                <option>Oregon</option>
+                <option>Pennsylvania</option>
+                <option>Rhode Island</option>
+                <option>South Carolina</option>
+                <option>South Dakota</option>
+                <option>Tennessee</option>
+                <option>Texas</option>
+                <option>Utah</option>
+                <option>Vermont</option>
+                <option>Virginia</option>
+                <option>Washington</option>
+                <option>West Virginia</option>
+                <option>Wisconsin</option>
+                <option>Wyoming</option>
+                <option>American Samoa</option>
+                <option>Guam</option>
+                <option>Northern Mariana Islands</option>
+                <option>Puerto Rico</option>
+                <option>U.S. Virgin Islands</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a state.
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="zip" class="form-label">ZIP Code</label>
+              <input type="text" pattern="[0-9]*" class="form-control" id="zip" placeholder="Your ZIP code" required>
+              <div class="invalid-feedback">
+                Please enter a valid ZIP code.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+              <div class="invalid-feedback">
+                Please enter a valid email address.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Your phone number" required>
+              <div class="invalid-feedback">
+                Please enter a valid phone number.
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="unweightedGPA" class="form-label">Unweighted GPA</label>
+              <select class="form-select" id="unweightedGPA" required>
+                <option value="">Choose...</option>
+                <option value="4.0">A (4.0)</option>
+                <option value="3.7">A- (3.7)</option>
+                <option value="3.3">B+ (3.3)</option>
+                <option value="3.0">B (3.0)</option>
+                <option value="2.7">B- (2.7) or below</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select the best way to describe your unweighted GPA.
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="weightedGPA" class="form-label">Weighted GPA (optional)</label>
+              <input type="number" step="0.01" class="form-control" id="weightedGPA" placeholder="Your weighted GPA">
+              <div class="invalid-feedback">
+                Please enter a valid weighted GPA.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="satOption" id="satOption" value="SAT">
+                    <label class="form-check-label" for="satOption">SAT</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="actOption" id="actOption" value="ACT">
+                    <label class="form-check-label" for="actOption">ACT</label>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="satActOption" id="noSatActOption" value="None">
+                    <label class="form-check-label" for="noSatActOption">No</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="satActOption" id="notSureOption" value="Not Sure">
+                    <label class="form-check-label" for="notSureOption">Not Sure Yet</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group" id="satScoreContainer" style="display: none;">
+                    <label for="satScore">SAT Score:</label>
+                    <input type="text" class="form-control" id="satScore" placeholder="Enter your SAT score">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group" id="actScoreContainer" style="display: none;">
+                    <label for="actScore">ACT Score:</label>
+                    <input type="text" class="form-control" id="actScore" placeholder="Enter your ACT score">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div id="scoreInputContainer" style="display: none;">
+                <label for="scoreInput" class="form-label">SAT/ACT Score</label>
+                <input type="text" class="form-control" id="scoreInput" placeholder="Your SAT/ACT Score">
+                <div class="invalid-feedback">
+                  Please enter a valid SAT/ACT score.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-lg custom-btn" type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2023 InsiderIvy</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+<script src="script.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Place the Firebase script tags before the custom script tag -->
+<!-- Place the Firebase script tags before the custom script tag -->
+
+
+
+
+
+</body>
+</html>
