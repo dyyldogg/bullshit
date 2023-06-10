@@ -44,6 +44,8 @@
       background-color: lightgreen;
       color: black;
     }
+
+    
   </style>
 
 </head>
@@ -82,7 +84,7 @@
   <main style="margin-top: 120px;">
     <div class="py-5 text-center">
       <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-      <h2>Sign Up Form</h2>
+      <h2>Client Sign Up Form</h2>
       <p class="lead">Please enter your information below to sign up for our college advising services.</p>
     </div>
 
@@ -109,9 +111,9 @@
               </div>
             </div>
 
-            <!-- <div class="col-md-6">
+             <div class="col-md-6">
               <label for="age" class="form-label">Age</label>
-              <input type="number" class="form-control" id="age" placeholder="Your age" required>
+              <input type="number" class="form-control age" id="age" placeholder="Your age" required>
               <div class="invalid-feedback">
                 Please enter your age.
               </div>
@@ -119,7 +121,7 @@
 
             <div class="col-md-6">
               <label for="grade" class="form-label">Grade Level</label>
-              <select class="form-select" id="grade" required>
+              <select class="form-select grade" id="grade" required>
                 <option value="">Choose...</option>
                 <option>Pre-High School</option>
                 <option>Freshman</option>
@@ -135,7 +137,7 @@
 
             <div class="col-md-6">
               <label for="ethnicity" class="form-label">Ethnicity</label>
-              <select class="form-select" id="ethnicity" required>
+              <select class="form-select ethnicity" id="ethnicity" required>
                 <option value="">Choose...</option>
                 <option>Hispanic or Latino</option>
                 <option>Not Hispanic or Latino</option>
@@ -153,7 +155,7 @@
 
             <div class="col-md-6">
               <label for="state" class="form-label">State</label>
-              <select class="form-select" id="state" required>
+              <select class="form-select state" id="state" required>
                 <option value="">Choose...</option>
                 <option>Alabama</option>
                 <option>Alaska</option>
@@ -218,7 +220,7 @@
 
             <div class="col-md-6">
               <label for="zip" class="form-label">ZIP Code</label>
-              <input type="text" pattern="[0-9]*" class="form-control" id="zip" placeholder="Your ZIP code" required>
+              <input type="text" pattern="[0-9]*" class="form-control zip" id="zip" placeholder="Your ZIP code" required>
               <div class="invalid-feedback">
                 Please enter a valid ZIP code.
               </div>
@@ -226,7 +228,7 @@
 
             <div class="col-12">
               <label for="email" class="form-label">Email Address</label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+              <input type="email" class="form-control email" id="email" placeholder="you@example.com" required>
               <div class="invalid-feedback">
                 Please enter a valid email address.
               </div>
@@ -234,7 +236,7 @@
 
             <div class="col-12">
               <label for="phone" class="form-label">Phone Number</label>
-              <input type="tel" class="form-control" id="phone" placeholder="Your phone number" required>
+              <input type="tel" class="form-control phone" id="phone" placeholder="Your phone number" required>
               <div class="invalid-feedback">
                 Please enter a valid phone number.
               </div>
@@ -242,7 +244,7 @@
 
             <div class="col-md-6">
               <label for="unweightedGPA" class="form-label">Unweighted GPA</label>
-              <select class="form-select" id="unweightedGPA" required>
+              <select class="form-select unweightedGPA" id="unweightedGPA" required>
                 <option value="">Choose...</option>
                 <option value="4.0">A (4.0)</option>
                 <option value="3.7">A- (3.7)</option>
@@ -257,31 +259,45 @@
 
             <div class="col-md-6">
               <label for="weightedGPA" class="form-label">Weighted GPA (optional)</label>
-              <input type="number" step="0.01" class="form-control" id="weightedGPA" placeholder="Your weighted GPA">
+              <input type="number" step="0.01" class="form-control weightedGPA" id="weightedGPA" placeholder="Your weighted GPA">
               <div class="invalid-feedback">
                 Please enter a valid weighted GPA.
               </div>
             </div>
+            <div class="col-md-6">
+             <label for="actScore" class="form-label">ACT Score (optional)</label>
+             <input type="number" step="0.01" class="form-control actScore" id="actScore" placeholder="Your ACT Score">
+             <div class="invalid-feedback">
+               Please enter a valid ACT Score.
+             </div>
+           </div>
+           <div class="col-md-6">
+            <label for="satScore" class="form-label">SAT Score (optional)</label>
+            <input type="number" step="0.01" class="form-control satScore" id="satScore" placeholder="Your SAT Score">
+            <div class="invalid-feedback">
+              Please enter a valid SAT Score.
+            </div>
+          </div>
 
-            <div class="col-12">
+            <!-- <div class="col-12">
               <div class="row">
                 <div class="col-6">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="satOption" id="satOption" value="SAT">
+                    <input class="form-check-input satOption" type="checkbox" name="satOption" id="satOption" value="SAT">
                     <label class="form-check-label" for="satOption">SAT</label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="actOption" id="actOption" value="ACT">
+                    <input class="form-check-input actOption" type="checkbox" name="actOption" id="actOption" value="ACT">
                     <label class="form-check-label" for="actOption">ACT</label>
                   </div>
                 </div>
                 <div class="col-6">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="satActOption" id="noSatActOption" value="None">
+                    <input class="form-check-input noSatActOption" type="radio" name="satActOption" id="noSatActOption" value="None">
                     <label class="form-check-label" for="noSatActOption">No</label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="satActOption" id="notSureOption" value="Not Sure">
+                    <input class="form-check-input notSureOption" type="radio" name="satActOption" id="notSureOption" value="Not Sure">
                     <label class="form-check-label" for="notSureOption">Not Sure Yet</label>
                   </div>
                 </div>
@@ -293,13 +309,13 @@
                 <div class="col-6">
                   <div class="form-group" id="satScoreContainer" style="display: none;">
                     <label for="satScore">SAT Score:</label>
-                    <input type="text" class="form-control" id="satScore" placeholder="Enter your SAT score">
+                    <input type="text" class="form-control satScore" id="satScore" placeholder="Enter your SAT score">
                   </div>
                 </div>
                 <div class="col-6">
                   <div class="form-group" id="actScoreContainer" style="display: none;">
                     <label for="actScore">ACT Score:</label>
-                    <input type="text" class="form-control" id="actScore" placeholder="Enter your ACT score">
+                    <input type="text" class="form-control actScore" id="actScore" placeholder="Enter your ACT score">
                   </div>
                 </div>
               </div>
@@ -314,7 +330,7 @@
                 </div>
               </div>
             </div>
-          </div> -->
+          </div>  -->
 
           <hr class="my-4">
 
