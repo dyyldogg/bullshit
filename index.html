@@ -89,11 +89,13 @@
     <div class="row g-5">
       <div class="col-md-6">
         <h4 class="mb-3">Student Details</h4>
-        <form class="needs-validation" novalidate>
+        <!-- <form class="needs-validation" novalidate> -->
+
+        <form class="contact-form"> <!-- //////////////// Example - add "firstName" to input class -->
           <div class="row g-3">
             <div class="col-md-6">
               <label for="firstName" class="form-label">First name</label>
-              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <input type="text" class="form-control firstName" id="firstName" placeholder="" value="" required>
               <div class="invalid-feedback">
                 Valid first name is required.
               </div>
@@ -101,13 +103,13 @@
 
             <div class="col-md-6">
               <label for="lastName" class="form-label">Last name</label>
-              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <input type="text" class="form-control lastName" id="lastName" placeholder="" value="" required>
               <div class="invalid-feedback">
                 Valid last name is required.
               </div>
             </div>
 
-            <div class="col-md-6">
+            <!-- <div class="col-md-6">
               <label for="age" class="form-label">Age</label>
               <input type="number" class="form-control" id="age" placeholder="Your age" required>
               <div class="invalid-feedback">
@@ -312,12 +314,18 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <hr class="my-4">
 
-          <button class="w-100 btn btn-lg custom-btn" type="submit">Sign Up</button>
+
+          <button type="submit">Submit</button>
+          <!-- <button class="w-100 btn btn-lg custom-btn" type="submit">Sign Up</button> -->
         </form>
+
+          <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+          <script src="app.js"></script>
+
       </div>
     </div>
   </main>
@@ -332,8 +340,10 @@
   </footer>
 </div>
 <script src="script.js" type="module"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script> -->
 
 
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
