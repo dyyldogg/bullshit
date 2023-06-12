@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>InsiderIvy Sign Up</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <style>
+    .navbar,
+    body {
+      font-family: 'Tinos', serif;
+    }
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .custom-btn {
+      background-color: green;
+      color: white;
+      border: none;
+    }
+
+    .custom-btn:hover {
+      background-color: lightgreen;
+      color: black;
+    }
+
+    
+  </style>
+
+</head>
+
+
+
+
+
+<body class="bg-light">
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
+    <div class="container-fluid px-md-3">
+      <a class="navbar-brand" href="#">InsiderIvy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Account</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="container">
+  <main style="margin-top: 120px;">
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+      <h2>Create an Account</h2>
+      <p class="lead"></p>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-md-6">
+        <h4 class="mb-3"></h4>
+        <!-- <form class="needs-validation" novalidate> -->
+
+        <form class="contact-form"> <!-- //////////////// Example - add "firstName" to input class -->
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="displayName" class="form-label">Display Name</label>
+              <input type="text" class="form-control displayName" id="displayName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid display name is required.
+              </div>
+            </div>
+
+      
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control email" id="email" placeholder="you@example.com" required>
+              <div class="invalid-feedback">
+                Please enter a valid email address.
+              </div>
+            </div>
+
+
+            <div class="col-12">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control password" id="password" placeholder="Your password" required>
+                <div class="invalid-feedback">
+                  Please enter a valid password.
+                </div>
+              </div>
+              
+    
+
+          <hr class="my-4">
+
+
+          <button type="submit">Submit</button>
+          <!-- <button class="w-100 btn btn-lg custom-btn" type="submit">Sign Up</button> -->
+        </form>
+
+          <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+          <script src="app.js"></script>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2023 InsiderIvy</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+<script src="script.js" type="module"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script> -->
+
+
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Place the Firebase script tags before the custom script tag -->
+<!-- Place the Firebase script tags before the custom script tag -->
+
+
+
+
+
+</body>
+</html>
