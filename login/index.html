@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>InsiderIvy - Registeration</title>
+  <title>InsiderIvy - Login</title>
   <!-- Cool Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -44,21 +44,20 @@
 <div id="content_container">
   <div id="form_container">
     <div id="form_header_container">
-      <h2 id="form_header">Register an Account</h2>
+      <h2 id="form_header">Login to InsiderIvy</h2>
     </div>
 
     <div id="form_content_container">
       <div id="form_content_inner_container">
-        <!-- <input type="text" id="full_name" placeholder="Full name"> -->
-        <!-- <input type="text" id="displayName" placeholder="Name"> -->
         <input type="email" id="email" placeholder="Email">
         <input type="password" id="password" placeholder="New Password">
 
-        <!-- <div id="button_container">
-          <button onclick="login()">Login</button>
-        </div> -->
         <div id="button_container">
-          <button onclick="register()">Register</button>
+          <button onclick="login()">Login</button>
+        </div>
+        <div id="register_container">
+          <p id="register_text">Don't have an account? <a href="#" style="color: green;">Register here</a></p>
+          <p id="forgot_password"><a href="#" style="color: green;">Forgot your password? Reset it here.</a></p>
         </div>
       </div>
     </div>
