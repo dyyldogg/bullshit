@@ -9,8 +9,9 @@ var firebaseConfig = {
     appId: "1:69856689724:web:d022e600f19702dd31cd39",
     measurementId: "G-18GL05TSXZ"
   };
-  // Initialize Firebase
+// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
 // Initialize variables
 const auth = firebase.auth();
 const database = firebase.database();
@@ -50,7 +51,7 @@ function register() {
       alert('User Created!');
     })
     .catch(function(error) {
-      // Firebase will use this to alert of its errors
+      // Firebase will use this to alert its errors
       var error_code = error.code;
       var error_message = error.message;
 
@@ -91,7 +92,7 @@ function login() {
       alert('User Logged In!');
     })
     .catch(function(error) {
-      // Firebase will use this to alert of its errors
+      // Firebase will use this to alert its errors
       var error_code = error.code;
       var error_message = error.message;
 
@@ -166,3 +167,8 @@ passwordInput.addEventListener("keyup", function(event) {
     login();
   }
 });
+
+// Call the initializeGoogleSignIn function once the window has loaded
+window.onload = function() {
+  initializeGoogleSignIn();
+};
